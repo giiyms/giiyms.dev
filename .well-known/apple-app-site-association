@@ -1,0 +1,22 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": [
+          "PHHQ83X9ZW.dev.giiyms.TeslaTracker"
+        ],
+        "components": [
+          {
+            "/": "/oauth/tesla",
+            "comment": "Tesla Fleet API OAuth callback — intercepted by Ampr / TeslaTracker iOS app"
+          },
+          {
+            "/": "/oauth/tesla/",
+            "comment": "Trailing-slash variant"
+          }
+        ]
+      }
+    ]
+  }
+}
