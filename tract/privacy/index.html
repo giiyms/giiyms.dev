@@ -20,69 +20,71 @@ hr{border:none;border-top:1px solid #2a2a2a;margin:2rem 0}
 <body>
 <main>
   <h1>Tract — Privacy Policy</h1>
-  <p class="muted">Last updated: 17 May 2026</p>
+  <p class="muted">Last updated: 21 August 2026</p>
 
   <div class="card">
     <h2>Summary</h2>
     <p>
-      Tract is designed to be private by default. All of your hydration, bathroom,
-      bladder-training, and Kegel data is stored locally on your device using
-      Apple's on-device SwiftData framework. We do not run servers that hold
-      your health information, we do not ship a third-party analytics SDK, and
-      we do not sell or share your data with anyone.
+      Tract is private by default for health logs. Hydration, bathroom,
+      bladder-training, and Kegel data stay on your device using Apple's
+      on-device SwiftData framework. We do not run accounts, analytics SDKs, or ads.
+    </p>
+    <p>
+      When you use <strong>Find Toilet</strong>, Tract sends your
+      <strong>precise coordinates</strong> to map and restroom data services
+      so it can show nearby results. That happens only for the search you
+      request and is not stored on Tract servers as a user profile.
     </p>
 
-    <h2>Data we collect</h2>
+    <h2>Data stored on your device</h2>
     <ul>
       <li><strong>Health-related logs</strong> (water intake, bathroom visits,
-        bladder-training schedules, Kegel sessions, urge events,
-        streaks) — stored locally on your device only.</li>
-      <li><strong>App preferences</strong> (daily water goal, reminder
-        settings) — stored locally on your device in UserDefaults.</li>
-      <li><strong>Approximate location</strong> — used only when you tap
-        “Find Nearby Toilets” to query the OpenStreetMap Overpass API.
-        Your location is never stored, logged, or transmitted to us.</li>
+        training schedules, Kegel sessions, urge events, streaks)</li>
+      <li><strong>App preferences</strong> (daily water goal, reminders)</li>
+      <li><strong>Optional toilet-search cache</strong> — a recent nearby
+        results snapshot so Find Toilet can still show last-known pins if
+        the network fails</li>
     </ul>
+
+    <h2>Location shared for Find Toilet</h2>
+    <p>
+      Precise latitude / longitude may be sent to:
+    </p>
+    <ul>
+      <li><strong>Tract’s toilet lookup backend</strong> (Supabase Edge Function /
+        public toilet cache)</li>
+      <li><strong>OpenStreetMap Overpass API</strong></li>
+      <li><strong>Refuge Restrooms API</strong> (refugerestrooms.org)</li>
+    </ul>
+    <p>
+      Location is not sold, not used for advertising, and not used for tracking
+      across other companies’ apps.
+    </p>
 
     <h2>Data we don't collect</h2>
     <ul>
-      <li>We do not run accounts or sign-in.</li>
-      <li>We do not collect crash reports, usage analytics, or device
-        identifiers.</li>
-      <li>We do not embed third-party advertising or tracking SDKs.</li>
+      <li>We do not run Tract user accounts or sign-in.</li>
+      <li>We do not embed third-party advertising or analytics SDKs.</li>
+      <li>We do not sell personal data.</li>
     </ul>
 
     <h2>Subscriptions</h2>
     <p>
-      Tract+ subscriptions are handled entirely by Apple via StoreKit. Apple
-      sends Tract only the receipt necessary to unlock paid features on your
-      device. Apple's
-      <a href="https://www.apple.com/leg/tract/privacy/">privacy policy</a> governs
-      that transaction.
+      Tract+ purchases are processed by Apple via StoreKit. Apple’s
+      <a href="https://www.apple.com/legal/privacy/">privacy policy</a>
+      governs payment information.
     </p>
-
-    <h2>Third-party services</h2>
-    <ul>
-      <li><strong>OpenStreetMap Overpass API</strong> — receives your
-        approximate coordinates only when you actively request nearby toilets.
-        Governed by the
-        <a href="https://wiki.openstreetmap.org/wiki/Overpass_API">OSM
-        Foundation</a> policies.</li>
-      <li><strong>Apple StoreKit</strong> — handles subscription billing as
-        described above.</li>
-    </ul>
 
     <h2>Your control</h2>
     <p>
-      You can delete every piece of data Tract holds at any time from
+      Delete local data anytime from
       <strong>Settings → Delete All Data</strong>. Uninstalling the app removes
-      all local data as well.
+      local data as well.
     </p>
 
     <h2>Children</h2>
     <p>
-      Tract is not directed at children under 13 and is not designed to collect
-      data from them.
+      Tract is not directed at children under 13.
     </p>
 
     <h2>Changes</h2>
@@ -100,7 +102,7 @@ hr{border:none;border-top:1px solid #2a2a2a;margin:2rem 0}
 
     <hr/>
     <p class="muted">
-      <a href="../">← giiyms.dev</a> · <a href="/tract/terms/">Terms of Use</a>
+      <a href="../">← Tract</a> · <a href="/tract/terms/">Terms of Use</a>
     </p>
   </div>
 </main>
