@@ -20,7 +20,7 @@ hr{border:none;border-top:1px solid #2a2a2a;margin:2rem 0}
 <body>
 <main>
   <h1>Tract — Privacy Policy</h1>
-  <p class="muted">Last updated: 21 August 2026</p>
+  <p class="muted">Last updated: 23 August 2026</p>
 
   <div class="card">
     <h2>Summary</h2>
@@ -35,6 +35,11 @@ hr{border:none;border-top:1px solid #2a2a2a;margin:2rem 0}
       so it can show nearby results. That happens only for the search you
       request and is not stored on Tract servers as a user profile.
     </p>
+    <p>
+      If you submit optional <strong>toilet feedback</strong>, Tract also sends
+      an anonymous <strong>device fingerprint</strong> (a random UUID, not your
+      Apple ID) to Tract’s Supabase backend so votes can be rate-limited.
+    </p>
 
     <h2>Data stored on your device</h2>
     <ul>
@@ -44,6 +49,8 @@ hr{border:none;border-top:1px solid #2a2a2a;margin:2rem 0}
       <li><strong>Optional toilet-search cache</strong> — a recent nearby
         results snapshot so Find Toilet can still show last-known pins if
         the network fails</li>
+      <li><strong>Random feedback fingerprint</strong> (UUID) used only for
+        abuse prevention</li>
     </ul>
 
     <h2>Location shared for Find Toilet</h2>
@@ -59,6 +66,14 @@ hr{border:none;border-top:1px solid #2a2a2a;margin:2rem 0}
     <p>
       Location is not sold, not used for advertising, and not used for tracking
       across other companies’ apps.
+    </p>
+
+    <h2>Anonymous feedback fingerprint (Device ID)</h2>
+    <p>
+      When you submit toilet availability feedback, Tract sends a random device
+      identifier (UUID) with the vote to Tract’s Supabase backend. It is used only
+      to prevent spam / duplicate voting, is not linked to your name or Apple ID,
+      and is not used for advertising or tracking across other companies’ apps.
     </p>
 
     <h2>Data we don't collect</h2>
@@ -79,7 +94,7 @@ hr{border:none;border-top:1px solid #2a2a2a;margin:2rem 0}
     <p>
       Delete local data anytime from
       <strong>Settings → Delete All Data</strong>. Uninstalling the app removes
-      local data as well.
+      local data as well (including the feedback fingerprint).
     </p>
 
     <h2>Children</h2>
