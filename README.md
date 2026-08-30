@@ -7,6 +7,9 @@ Static site hosted on GitHub Pages. Primary purpose: serve the
 ## Layout
 
 - `index.html` — landing page
+- `tract/index.html` — Tract product / App Store support page
+- `tract/privacy/index.html` — Tract privacy policy (`/tract/privacy/`)
+- `tract/terms/index.html` — Tract terms of use (`/tract/terms/`)
 - `.well-known/apple-app-site-association` — Universal Link config (must be served as JSON, no extension, no redirect)
 - `oauth/tesla/index.html` — fallback if app isn't installed
 - `CNAME` — GitHub Pages custom domain
